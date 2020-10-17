@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio Express 15 for Windows Desktop
 VisualStudioVersion = 15.0.28307.1259
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpu_no_tsukurikata", "cpu_no_tsukurikata.vcxproj", "{8F4B676C-F5E2-40B1-82B7-A4A6BF202EB3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asm_sum", "cpu_no_tsukurikata.vcxproj", "{8F4B676C-F5E2-40B1-82B7-A4A6BF202EB3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpu_emulator", "cpu_emulator\cpu_emulator.vcxproj", "{D06867E0-7434-4E0F-B94B-D5B6B814E365}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,14 @@ Global
 		{8F4B676C-F5E2-40B1-82B7-A4A6BF202EB3}.Release|x64.Build.0 = Release|x64
 		{8F4B676C-F5E2-40B1-82B7-A4A6BF202EB3}.Release|x86.ActiveCfg = Release|Win32
 		{8F4B676C-F5E2-40B1-82B7-A4A6BF202EB3}.Release|x86.Build.0 = Release|Win32
+		{D06867E0-7434-4E0F-B94B-D5B6B814E365}.Debug|x64.ActiveCfg = Debug|x64
+		{D06867E0-7434-4E0F-B94B-D5B6B814E365}.Debug|x64.Build.0 = Debug|x64
+		{D06867E0-7434-4E0F-B94B-D5B6B814E365}.Debug|x86.ActiveCfg = Debug|Win32
+		{D06867E0-7434-4E0F-B94B-D5B6B814E365}.Debug|x86.Build.0 = Debug|Win32
+		{D06867E0-7434-4E0F-B94B-D5B6B814E365}.Release|x64.ActiveCfg = Release|x64
+		{D06867E0-7434-4E0F-B94B-D5B6B814E365}.Release|x64.Build.0 = Release|x64
+		{D06867E0-7434-4E0F-B94B-D5B6B814E365}.Release|x86.ActiveCfg = Release|Win32
+		{D06867E0-7434-4E0F-B94B-D5B6B814E365}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
