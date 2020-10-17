@@ -156,7 +156,7 @@ void emulateCPU(short* rom, short* ram){
             (unsigned short)(reg[opRegA(ir)]) >>= 1;
             break;
         case SRA:
-            reg[opRegA(ir)] = (reg[opRegA(ir)] >> 1) | 0x8000;
+            reg[opRegA(ir)] = (reg[opRegA(ir)] >> 1) | (reg[opRegA(ir)] & 0x8000);
             break;
         case LDL:
             reg[opRegA(ir)] = (reg[opRegA(ir)] & 0xFF00) + (short)opData(ir);
@@ -199,67 +199,67 @@ void emulateCPU(short* rom, short* ram){
 /* Functions used within assembler */
 
 short mov(unsigned char reg_a, unsigned char reg_b){
-    return (short)0x0000 | (short)reg_a << 8 | (short)reg_b << 5;
+    return (short)MOV << 11 | (short)reg_a << 8 | (short)reg_b << 5;
 }
 
 short add(unsigned char reg_a, unsigned char reg_b){
-    return (short)0x0800 | (short)reg_a << 8 | (short)reg_b << 5;
+    return (short)ADD << 11 | (short)reg_a << 8 | (short)reg_b << 5;
 }
 
 short sub(unsigned char reg_a, unsigned char reg_b){
-    return (short)0x1000 | (short)reg_a << 8 | (short)reg_b << 5;
+    return (short)SUB << 11 | (short)reg_a << 8 | (short)reg_b << 5;
 }
 
 short and(unsigned char reg_a, unsigned char reg_b){
-    return (short)0x1800 | (short)reg_a << 8 | (short)reg_b << 5;
+    return (short)AND << 11 | (short)reg_a << 8 | (short)reg_b << 5;
 }
 
 short or(unsigned char reg_a, unsigned char reg_b){
-    return (short)0x2000 | (short)reg_a << 8 | (short)reg_b << 5;
+    return (short)OR << 11 | (short)reg_a << 8 | (short)reg_b << 5;
 }
 
 short sl(unsigned char reg_a){
-    return (short)0x2800 | (short)reg_a << 8;
+    return (short)SL << 11 | (short)reg_a << 8;
 }
 
 short sr(unsigned char reg_a){
-    return (short)0x3000 | (short)reg_a << 8;
+    return (short)SR << 11 | (short)reg_a << 8;
 }
 
 short sra(unsigned char reg_a){
-    return (short)0x3800 | (short)reg_a << 8;
+    return (short)SRA << 11 | (short)reg_a << 8;
 }
 
 short ldl(unsigned char reg_a, unsigned char data){
-    return (short)0x4000 | (short)reg_a << 8 | (short)data;
+    return (short)LDL << 11 | (short)reg_a << 8 | (short)data;
 }
 
 short ldh(unsigned char reg_a, unsigned char data){
-    return (short)0x4800 | (short)reg_a << 8 | (short)data;
+    return (short)LDH << 11 | (short)reg_a << 8 | (short)data;
 }
 
 short cmp(unsigned char reg_a, unsigned char reg_b){
-    return (short)0x5000 | (short)reg_a << 8 | (short)reg_b << 5;
+    return (short)CMP << 11 | (short)reg_a << 8 | (short)reg_b << 5;
 }
 
 short je(unsigned char addr){
-    return (short)0x5800 | (short)addr;
+    return (short)JE << 11 | (short)addr;
 }
 
 short jmp(unsigned char addr){
-    return (short)0x6000 | (short)addr;
+    return (short)JMP << 11 | (short)addr;
 }
 
 short ld(unsigned char reg_a, unsigned char addr){
-    return (short)0x6800 | (short)reg_a << 8 | (short)addr;
+    return (short)LD << 11 | (short)reg_a << 8 | (short)addr;
 }
 
 short st(unsigned char reg_a, unsigned char addr){
-    return (short)0x7000 | (short)reg_a << 8 | (short)addr;
+    return (short)ST << 11 | (short)reg_a << 8 | (short)addr;
 }
 
 short hlt(){
-    return (short)0x7800;
+    return (short)HLT << 11;
 }
 
 
