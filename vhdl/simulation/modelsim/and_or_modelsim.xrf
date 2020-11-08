@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, /home/kitkat4/ws/cpu_no_tsukurikata/vhdl/and_or.vhd
+source_file = 1, /opt/intelFPGA_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /opt/intelFPGA_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /opt/intelFPGA_lite/19.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /opt/intelFPGA_lite/19.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, /home/kitkat4/ws/cpu_no_tsukurikata/vhdl/db/and_or.cbx.xml
+design_name = and_or
+instance = comp, \Z_AND~output , Z_AND~output, and_or, 1
+instance = comp, \Z_OR~output , Z_OR~output, and_or, 1
+instance = comp, \B~input , B~input, and_or, 1
+instance = comp, \A~input , A~input, and_or, 1
+instance = comp, \Z_AND~0 , Z_AND~0, and_or, 1
+instance = comp, \Z_OR~0 , Z_OR~0, and_or, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, and_or, 1
