@@ -13,8 +13,7 @@ end dec_7seg;
 architecture RTL of dec_7seg is
 
 begin
-    with DIN select
-        SEG7 <=
+    with DIN select SEG7 <=
         "1000000" when "0000",
         "1111001" when "0001",
         "0100100" when "0010",
