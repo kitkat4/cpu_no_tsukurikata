@@ -1,0 +1,20 @@
+# Compile of counter.vhd was successful.
+# Compile of counter_sim.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.counter_sim
+# vsim -gui work.counter_sim 
+# Start time: 19:07:55 on Dec 02,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.counter_sim(sim)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.counter(rtl)
+run
+add wave -position end  sim:/counter_sim/CLK_TMP
+add wave -position end  sim:/counter_sim/RESULT
+add wave -position end  sim:/counter_sim/RST_TMP
+run
+# End time: 19:09:29 on Dec 02,2020, Elapsed time: 0:01:34
+# Errors: 0, Warnings: 0

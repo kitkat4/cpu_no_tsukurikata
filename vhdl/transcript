@@ -1,0 +1,154 @@
+# Compile of counter_sim.vhd failed with 2 errors.
+# Compile of counter.vhd was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of counter_sim.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of counter_sim.vhd failed with 5 errors.
+# Compile of counter.vhd was successful.
+# 2 compiles, 1 failed with 5 errors.
+# Compile of counter_sim.vhd failed with 5 errors.
+# Compile of counter.vhd was successful.
+# 2 compiles, 1 failed with 5 errors.
+# Compile of counter_sim.vhd failed with 5 errors.
+# Compile of counter.vhd was successful.
+# 2 compiles, 1 failed with 5 errors.
+# Compile of counter_sim.vhd failed with 4 errors.
+# Compile of counter.vhd was successful.
+# 2 compiles, 1 failed with 4 errors.
+# Compile of counter_sim.vhd failed with 3 errors.
+# Compile of counter.vhd was successful.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of counter_sim.vhd was successful.
+# Compile of counter.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.counter_sim
+# vsim -gui work.counter_sim 
+# Start time: 18:44:22 on Dec 02,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.counter_sim(sim)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.counter(rtl)
+add wave -position end  sim:/counter_sim/CLK_TMP
+add wave -position end  sim:/counter_sim/RESULT
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 90 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 90 ns  Iteration: 1  Instance: /counter_sim/C1
+# Compile of counter_sim.vhd was successful.
+# Compile of counter.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 110 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 110 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 130 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 130 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 150 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 150 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 170 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 170 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 190 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 190 ns  Iteration: 1  Instance: /counter_sim/C1
+# Compile of counter_sim.vhd was successful.
+# Compile of counter.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of counter_sim.vhd was successful.
+# Compile of counter.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 210 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 210 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 230 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 230 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 250 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 250 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 270 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 270 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 290 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 290 ns  Iteration: 1  Instance: /counter_sim/C1
+# Compile of counter_sim.vhd failed with 1 errors.
+# Compile of counter.vhd was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of counter_sim.vhd was successful.
+# Compile of counter.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 310 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 310 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 330 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 330 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 350 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 350 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 370 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 370 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 390 ns  Iteration: 1  Instance: /counter_sim/C1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 390 ns  Iteration: 1  Instance: /counter_sim/C1
+vsim -gui work.counter_sim
+# End time: 19:02:27 on Dec 02,2020, Elapsed time: 0:18:05
+# Errors: 0, Warnings: 40
+# vsim -gui work.counter_sim 
+# Start time: 19:02:27 on Dec 02,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.counter_sim(sim)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.counter(rtl)
+add wave -position end  sim:/counter_sim/CLK_TMP
+add wave -position end  sim:/counter_sim/RESULT
+add wave -position end  sim:/counter_sim/RST_TMP
+run
+run
+# End time: 19:06:18 on Dec 02,2020, Elapsed time: 0:03:51
+# Errors: 0, Warnings: 0

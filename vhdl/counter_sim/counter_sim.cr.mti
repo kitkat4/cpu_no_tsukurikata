@@ -1,0 +1,19 @@
+C:/Users/kitkat4/ws/cpu_no_tsukurikata/vhdl/counter_sim/counter_sim.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/kitkat4/ws/cpu_no_tsukurikata/vhdl/counter_sim/counter_sim.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity counter_sim
+-- Compiling architecture SIM of counter_sim
+
+} {} {}} C:/Users/kitkat4/ws/cpu_no_tsukurikata/vhdl/counter_sim/counter.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/kitkat4/ws/cpu_no_tsukurikata/vhdl/counter_sim/counter.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity counter
+-- Compiling architecture RTL of counter
+
+} {} {}}
