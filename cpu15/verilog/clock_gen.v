@@ -8,11 +8,11 @@ module clock_gen(CLK, CLK_FT, CLK_DC, CLK_EX, CLK_WB);
     output         CLK_EX;
     output         CLK_WB;
 
-    reg            CLK_FT;
-    reg            CLK_DC;
-    reg            CLK_EX;
-    reg            CLK_WB;
-    reg [1:0]      COUNT;
+    reg            CLK_FT = 0;
+    reg            CLK_DC = 0;
+    reg            CLK_EX = 0;
+    reg            CLK_WB = 0;
+    reg [1:0]      COUNT = 2'b00;
 
     always@(posedge CLK) begin
 
