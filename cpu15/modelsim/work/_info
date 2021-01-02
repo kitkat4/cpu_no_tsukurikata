@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/19.1
+vclock_gen
+!s110 1609583665
+!i10b 1
+!s100 hzQIY?M^C2TOGGU<IoKT^1
+IO8GAQ>ToAJQ]jicM=Y9ji2
+VDg1SIo80bB@j0V0VzS_@n1
+dC:/Users/kitkat/ws/cpu_no_tsukurikata/cpu15/modelsim
+w1609583659
+8C:/Users/kitkat/ws/cpu_no_tsukurikata/cpu15/verilog/clock_gen.v
+FC:/Users/kitkat/ws/cpu_no_tsukurikata/cpu15/verilog/clock_gen.v
+L0 3
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1609583665.000000
+!s107 C:/Users/kitkat/ws/cpu_no_tsukurikata/cpu15/verilog/clock_gen.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kitkat/ws/cpu_no_tsukurikata/cpu15/verilog/clock_gen.v|
+!i113 1
+o-work work
+tCvgOpt 0

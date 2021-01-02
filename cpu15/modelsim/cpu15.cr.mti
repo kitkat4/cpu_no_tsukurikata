@@ -1,0 +1,13 @@
+C:/Users/kitkat/ws/cpu_no_tsukurikata/cpu15/verilog/clock_gen.v {0 {vlog -work work -stats=none C:/Users/kitkat/ws/cpu_no_tsukurikata/cpu15/verilog/clock_gen.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module clock_gen
+** Error: C:/Users/kitkat/ws/cpu_no_tsukurikata/cpu15/verilog/clock_gen.v(18): (vlog-2110) Illegal reference to net "CLK_FT".
+** Error: C:/Users/kitkat/ws/cpu_no_tsukurikata/cpu15/verilog/clock_gen.v(19): (vlog-2110) Illegal reference to net "CLK_EX".
+** Error: C:/Users/kitkat/ws/cpu_no_tsukurikata/cpu15/verilog/clock_gen.v(22): (vlog-2110) Illegal reference to net "CLK_DC".
+** Error: C:/Users/kitkat/ws/cpu_no_tsukurikata/cpu15/verilog/clock_gen.v(23): (vlog-2110) Illegal reference to net "CLK_WB".
+** Error: C:/Users/kitkat/ws/cpu_no_tsukurikata/cpu15/verilog/clock_gen.v(26): (vlog-2110) Illegal reference to net "CLK_EX".
+** Error: C:/Users/kitkat/ws/cpu_no_tsukurikata/cpu15/verilog/clock_gen.v(27): (vlog-2110) Illegal reference to net "CLK_FT".
+** Error: C:/Users/kitkat/ws/cpu_no_tsukurikata/cpu15/verilog/clock_gen.v(30): (vlog-2110) Illegal reference to net "CLK_WB".
+** Error: C:/Users/kitkat/ws/cpu_no_tsukurikata/cpu15/verilog/clock_gen.v(31): (vlog-2110) Illegal reference to net "CLK_DC".
+
+} {4.0 12.0} {}}

@@ -1,0 +1,6 @@
+# Compile of clock_gen.v failed with 8 errors.
+# Compile of clock_gen.v was successful.
+vsim -gui work.clock_gen
+# vsim -gui work.clock_gen 
+# Start time: 19:34:52 on Jan 02,2021
+# Loading work.clock_gen
