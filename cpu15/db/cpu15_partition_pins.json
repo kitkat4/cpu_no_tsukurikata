@@ -1,0 +1,145 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "IO64_OUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "IO64_OUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "IO64_OUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "IO64_OUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "IO64_OUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "IO64_OUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "IO64_OUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "IO64_OUT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "IO64_OUT[8]",
+					"strict" : false
+				},
+				{
+					"name" : "IO64_OUT[9]",
+					"strict" : false
+				},
+				{
+					"name" : "IO64_OUT[10]",
+					"strict" : false
+				},
+				{
+					"name" : "IO64_OUT[11]",
+					"strict" : false
+				},
+				{
+					"name" : "IO64_OUT[12]",
+					"strict" : false
+				},
+				{
+					"name" : "IO64_OUT[13]",
+					"strict" : false
+				},
+				{
+					"name" : "IO64_OUT[14]",
+					"strict" : false
+				},
+				{
+					"name" : "IO64_OUT[15]",
+					"strict" : false
+				},
+				{
+					"name" : "RESET_N",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "IO65_IN[0]",
+					"strict" : false
+				},
+				{
+					"name" : "IO65_IN[1]",
+					"strict" : false
+				},
+				{
+					"name" : "IO65_IN[2]",
+					"strict" : false
+				},
+				{
+					"name" : "IO65_IN[3]",
+					"strict" : false
+				},
+				{
+					"name" : "IO65_IN[4]",
+					"strict" : false
+				},
+				{
+					"name" : "IO65_IN[5]",
+					"strict" : false
+				},
+				{
+					"name" : "IO65_IN[6]",
+					"strict" : false
+				},
+				{
+					"name" : "IO65_IN[7]",
+					"strict" : false
+				},
+				{
+					"name" : "IO65_IN[8]",
+					"strict" : false
+				},
+				{
+					"name" : "IO65_IN[9]",
+					"strict" : false
+				},
+				{
+					"name" : "IO65_IN[10]",
+					"strict" : false
+				},
+				{
+					"name" : "IO65_IN[11]",
+					"strict" : false
+				},
+				{
+					"name" : "IO65_IN[12]",
+					"strict" : false
+				},
+				{
+					"name" : "IO65_IN[13]",
+					"strict" : false
+				},
+				{
+					"name" : "IO65_IN[14]",
+					"strict" : false
+				},
+				{
+					"name" : "IO65_IN[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

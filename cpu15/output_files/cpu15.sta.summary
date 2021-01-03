@@ -1,0 +1,245 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clock_gen:C1|CLK_EX'
+Slack : -6.183
+TNS   : -170.577
+
+Type  : Slow 1100mV 85C Model Setup 'clock_gen:C1|CLK_DC'
+Slack : -6.014
+TNS   : -312.579
+
+Type  : Slow 1100mV 85C Model Setup 'clock_gen:C1|CLK_WB'
+Slack : -3.800
+TNS   : -858.386
+
+Type  : Slow 1100mV 85C Model Setup 'clock_gen:C1|CLK_FT'
+Slack : -3.382
+TNS   : -23.305
+
+Type  : Slow 1100mV 85C Model Setup 'CLK'
+Slack : -2.187
+TNS   : -9.718
+
+Type  : Slow 1100mV 85C Model Hold 'clock_gen:C1|CLK_DC'
+Slack : 0.195
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clock_gen:C1|CLK_WB'
+Slack : 0.243
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clock_gen:C1|CLK_EX'
+Slack : 0.318
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'CLK'
+Slack : 0.548
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clock_gen:C1|CLK_FT'
+Slack : 1.521
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock_gen:C1|CLK_FT'
+Slack : -3.166
+TNS   : -47.184
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock_gen:C1|CLK_WB'
+Slack : -0.724
+TNS   : -328.172
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock_gen:C1|CLK_DC'
+Slack : -0.724
+TNS   : -75.523
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock_gen:C1|CLK_EX'
+Slack : -0.724
+TNS   : -46.647
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -0.724
+TNS   : -7.064
+
+Type  : Slow 1100mV 0C Model Setup 'clock_gen:C1|CLK_DC'
+Slack : -6.128
+TNS   : -325.042
+
+Type  : Slow 1100mV 0C Model Setup 'clock_gen:C1|CLK_EX'
+Slack : -6.112
+TNS   : -168.299
+
+Type  : Slow 1100mV 0C Model Setup 'clock_gen:C1|CLK_WB'
+Slack : -3.635
+TNS   : -826.311
+
+Type  : Slow 1100mV 0C Model Setup 'clock_gen:C1|CLK_FT'
+Slack : -3.281
+TNS   : -22.203
+
+Type  : Slow 1100mV 0C Model Setup 'CLK'
+Slack : -2.449
+TNS   : -10.958
+
+Type  : Slow 1100mV 0C Model Hold 'clock_gen:C1|CLK_WB'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clock_gen:C1|CLK_DC'
+Slack : 0.184
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clock_gen:C1|CLK_EX'
+Slack : 0.316
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'CLK'
+Slack : 0.553
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clock_gen:C1|CLK_FT'
+Slack : 1.321
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock_gen:C1|CLK_FT'
+Slack : -3.166
+TNS   : -47.105
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock_gen:C1|CLK_WB'
+Slack : -0.724
+TNS   : -322.401
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock_gen:C1|CLK_DC'
+Slack : -0.724
+TNS   : -74.729
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock_gen:C1|CLK_EX'
+Slack : -0.724
+TNS   : -46.520
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -0.724
+TNS   : -7.048
+
+Type  : Fast 1100mV 85C Model Setup 'clock_gen:C1|CLK_DC'
+Slack : -2.670
+TNS   : -129.734
+
+Type  : Fast 1100mV 85C Model Setup 'clock_gen:C1|CLK_EX'
+Slack : -2.535
+TNS   : -67.549
+
+Type  : Fast 1100mV 85C Model Setup 'clock_gen:C1|CLK_WB'
+Slack : -1.535
+TNS   : -283.704
+
+Type  : Fast 1100mV 85C Model Setup 'clock_gen:C1|CLK_FT'
+Slack : -0.982
+TNS   : -5.756
+
+Type  : Fast 1100mV 85C Model Setup 'CLK'
+Slack : -0.673
+TNS   : -2.628
+
+Type  : Fast 1100mV 85C Model Hold 'clock_gen:C1|CLK_DC'
+Slack : -0.253
+TNS   : -2.414
+
+Type  : Fast 1100mV 85C Model Hold 'clock_gen:C1|CLK_EX'
+Slack : -0.214
+TNS   : -0.910
+
+Type  : Fast 1100mV 85C Model Hold 'clock_gen:C1|CLK_WB'
+Slack : -0.177
+TNS   : -5.438
+
+Type  : Fast 1100mV 85C Model Hold 'CLK'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clock_gen:C1|CLK_FT'
+Slack : 0.259
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock_gen:C1|CLK_FT'
+Slack : -2.174
+TNS   : -31.142
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -0.379
+TNS   : -1.810
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock_gen:C1|CLK_DC'
+Slack : -0.144
+TNS   : -2.380
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock_gen:C1|CLK_WB'
+Slack : -0.121
+TNS   : -12.110
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock_gen:C1|CLK_EX'
+Slack : -0.119
+TNS   : -1.934
+
+Type  : Fast 1100mV 0C Model Setup 'clock_gen:C1|CLK_DC'
+Slack : -2.432
+TNS   : -120.078
+
+Type  : Fast 1100mV 0C Model Setup 'clock_gen:C1|CLK_EX'
+Slack : -2.231
+TNS   : -58.608
+
+Type  : Fast 1100mV 0C Model Setup 'clock_gen:C1|CLK_WB'
+Slack : -1.303
+TNS   : -236.077
+
+Type  : Fast 1100mV 0C Model Setup 'clock_gen:C1|CLK_FT'
+Slack : -0.830
+TNS   : -4.638
+
+Type  : Fast 1100mV 0C Model Setup 'CLK'
+Slack : -0.621
+TNS   : -2.433
+
+Type  : Fast 1100mV 0C Model Hold 'clock_gen:C1|CLK_DC'
+Slack : -0.271
+TNS   : -3.156
+
+Type  : Fast 1100mV 0C Model Hold 'clock_gen:C1|CLK_EX'
+Slack : -0.224
+TNS   : -1.152
+
+Type  : Fast 1100mV 0C Model Hold 'clock_gen:C1|CLK_WB'
+Slack : -0.218
+TNS   : -9.550
+
+Type  : Fast 1100mV 0C Model Hold 'CLK'
+Slack : 0.170
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clock_gen:C1|CLK_FT'
+Slack : 0.171
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock_gen:C1|CLK_FT'
+Slack : -2.174
+TNS   : -31.066
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -0.364
+TNS   : -1.707
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock_gen:C1|CLK_DC'
+Slack : -0.075
+TNS   : -0.476
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock_gen:C1|CLK_WB'
+Slack : -0.062
+TNS   : -2.895
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock_gen:C1|CLK_EX'
+Slack : -0.052
+TNS   : -0.557
+
+------------------------------------------------------------

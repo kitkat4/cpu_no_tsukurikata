@@ -1,11 +1,11 @@
 
 
-module cpu15(CLK, RESET_N, IO65_IN, IO65_OUT);
+module cpu15(CLK, RESET_N, IO65_IN, IO64_OUT);
     
     input         CLK;
     input         RESET_N;
     input [15:0]  IO65_IN;
-    output [15:0] IO65_OUT;
+    output [15:0] IO64_OUT;
 
     wire          CLK_FT;
     wire          CLK_DC;
@@ -42,7 +42,7 @@ module cpu15(CLK, RESET_N, IO65_IN, IO65_OUT);
     wire          REG_WEN;
     wire          RAM_WEN;
     
-    clk_gen C1(CLK, CLK_FT, CLK_DC, CLK_EX, CLK_WB);
+    clock_gen C1(CLK, CLK_FT, CLK_DC, CLK_EX, CLK_WB);
     
     fetch C2(CLK_FT, P_COUNT, PROM_OUT);
     
@@ -54,7 +54,7 @@ module cpu15(CLK, RESET_N, IO65_IN, IO65_OUT);
     reg_dc C5(CLK_DC, PROM_OUT[7:5], REG_0, REG_1, REG_2, REG_3, REG_4, REG_5,
               REG_6, REG_7, N_REG_B, REG_B);
     
-    ram_dc C6(CLK_DC, PROM_OUT[7:0] RAM_0, RAM_1, RAM_2, RAM_3, RAM_4, RAM_5,
+    ram_dc C6(CLK_DC, PROM_OUT[7:0], RAM_0, RAM_1, RAM_2, RAM_3, RAM_4, RAM_5,
               RAM_6, RAM_7, IO65_IN, RAM_ADDR, RAM_OUT);
     
     exec C7(CLK_EX, RESET_N, OP_CODE, REG_A, REG_B, OP_DATA, RAM_OUT, P_COUNT,

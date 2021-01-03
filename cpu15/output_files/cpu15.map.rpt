@@ -1,0 +1,549 @@
+Analysis & Synthesis report for cpu15
+Sun Jan  3 15:46:13 2021
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Registers Packed Into Inferred Megafunctions
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for fetch:C2|altsyncram:Mux0_rtl_0|altsyncram_h751:auto_generated
+ 15. Parameter Settings for Inferred Entity Instance: fetch:C2|altsyncram:Mux0_rtl_0
+ 16. altsyncram Parameter Settings by Entity Instance
+ 17. Port Connectivity Checks: "reg_dc:C5"
+ 18. Post-Synthesis Netlist Statistics for Top Partition
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sun Jan  3 15:46:13 2021       ;
+; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Revision Name                   ; cpu15                                       ;
+; Top-level Entity Name           ; cpu15                                       ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 380                                         ;
+; Total pins                      ; 34                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 3,840                                       ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Top-level entity name                                                           ; cpu15              ; cpu15              ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                       ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                   ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
+; verilog/reg_wb.v                 ; yes             ; User Verilog HDL File        ; /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/reg_wb.v                 ;         ;
+; verilog/reg_dc.v                 ; yes             ; User Verilog HDL File        ; /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/reg_dc.v                 ;         ;
+; verilog/ram_wb.v                 ; yes             ; User Verilog HDL File        ; /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/ram_wb.v                 ;         ;
+; verilog/ram_dc.v                 ; yes             ; User Verilog HDL File        ; /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/ram_dc.v                 ;         ;
+; verilog/fetch.v                  ; yes             ; User Verilog HDL File        ; /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/fetch.v                  ;         ;
+; verilog/exec.v                   ; yes             ; User Verilog HDL File        ; /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/exec.v                   ;         ;
+; verilog/decode.v                 ; yes             ; User Verilog HDL File        ; /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/decode.v                 ;         ;
+; verilog/cpu15.v                  ; yes             ; User Verilog HDL File        ; /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/cpu15.v                  ;         ;
+; verilog/clock_gen.v              ; yes             ; User Verilog HDL File        ; /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/clock_gen.v              ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                 ; /opt/intelFPGA_lite/19.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                 ; /opt/intelFPGA_lite/19.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                 ; /opt/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                 ; /opt/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; aglobal191.inc                   ; yes             ; Megafunction                 ; /opt/intelFPGA_lite/19.1/quartus/libraries/megafunctions/aglobal191.inc        ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                 ; /opt/intelFPGA_lite/19.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                       ; yes             ; Megafunction                 ; /opt/intelFPGA_lite/19.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                       ; yes             ; Megafunction                 ; /opt/intelFPGA_lite/19.1/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                 ; /opt/intelFPGA_lite/19.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_h751.tdf           ; yes             ; Auto-Generated Megafunction  ; /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/db/altsyncram_h751.tdf           ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                       ;
++---------------------------------------------+---------------------+
+; Resource                                    ; Usage               ;
++---------------------------------------------+---------------------+
+; Estimate of Logic utilization (ALMs needed) ; 278                 ;
+;                                             ;                     ;
+; Combinational ALUT usage for logic          ; 287                 ;
+;     -- 7 input functions                    ; 0                   ;
+;     -- 6 input functions                    ; 146                 ;
+;     -- 5 input functions                    ; 46                  ;
+;     -- 4 input functions                    ; 12                  ;
+;     -- <=3 input functions                  ; 83                  ;
+;                                             ;                     ;
+; Dedicated logic registers                   ; 380                 ;
+;                                             ;                     ;
+; I/O pins                                    ; 34                  ;
+; Total MLAB memory bits                      ; 0                   ;
+; Total block memory bits                     ; 3840                ;
+;                                             ;                     ;
+; Total DSP Blocks                            ; 0                   ;
+;                                             ;                     ;
+; Maximum fan-out node                        ; clock_gen:C1|CLK_WB ;
+; Maximum fan-out                             ; 272                 ;
+; Total fan-out                               ; 2813                ;
+; Average fan-out                             ; 3.75                ;
++---------------------------------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                        ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                  ; Entity Name     ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------+-----------------+--------------+
+; |cpu15                                    ; 287 (0)             ; 380 (0)                   ; 3840              ; 0          ; 34   ; 0            ; |cpu15                                                               ; cpu15           ; work         ;
+;    |clock_gen:C1|                         ; 6 (6)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu15|clock_gen:C1                                                  ; clock_gen       ; work         ;
+;    |decode:C3|                            ; 0 (0)               ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |cpu15|decode:C3                                                     ; decode          ; work         ;
+;    |exec:C7|                              ; 107 (107)           ; 39 (39)                   ; 0                 ; 0          ; 0    ; 0            ; |cpu15|exec:C7                                                       ; exec            ; work         ;
+;    |fetch:C2|                             ; 7 (7)               ; 0 (0)                     ; 3840              ; 0          ; 0    ; 0            ; |cpu15|fetch:C2                                                      ; fetch           ; work         ;
+;       |altsyncram:Mux0_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 3840              ; 0          ; 0    ; 0            ; |cpu15|fetch:C2|altsyncram:Mux0_rtl_0                                ; altsyncram      ; work         ;
+;          |altsyncram_h751:auto_generated| ; 0 (0)               ; 0 (0)                     ; 3840              ; 0          ; 0    ; 0            ; |cpu15|fetch:C2|altsyncram:Mux0_rtl_0|altsyncram_h751:auto_generated ; altsyncram_h751 ; work         ;
+;    |ram_dc:C6|                            ; 53 (53)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |cpu15|ram_dc:C6                                                     ; ram_dc          ; work         ;
+;    |ram_wb:C9|                            ; 10 (10)             ; 144 (144)                 ; 0                 ; 0          ; 0    ; 0            ; |cpu15|ram_wb:C9                                                     ; ram_wb          ; work         ;
+;    |reg_dc:C4|                            ; 48 (48)             ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |cpu15|reg_dc:C4                                                     ; reg_dc          ; work         ;
+;    |reg_dc:C5|                            ; 48 (48)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |cpu15|reg_dc:C5                                                     ; reg_dc          ; work         ;
+;    |reg_wb:C8|                            ; 8 (8)               ; 128 (128)                 ; 0                 ; 0          ; 0    ; 0            ; |cpu15|reg_wb:C8                                                     ; reg_wb          ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                 ;
++--------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+----------------------+
+; Name                                                                     ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                  ;
++--------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+----------------------+
+; fetch:C2|altsyncram:Mux0_rtl_0|altsyncram_h751:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 15           ; --           ; --           ; 3840 ; cpu15.cpu150.rtl.mif ;
++--------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+----------------------+
+
+
++---------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                        ;
++----------------------------------------+----------------------------------+
+; Register name                          ; Reason for Removal               ;
++----------------------------------------+----------------------------------+
+; ram_dc:C6|RAM_AD_OUT[7]                ; Merged with decode:C3|OP_DATA[7] ;
+; ram_dc:C6|RAM_AD_OUT[6]                ; Merged with decode:C3|OP_DATA[6] ;
+; ram_dc:C6|RAM_AD_OUT[5]                ; Merged with decode:C3|OP_DATA[5] ;
+; ram_dc:C6|RAM_AD_OUT[4]                ; Merged with decode:C3|OP_DATA[4] ;
+; ram_dc:C6|RAM_AD_OUT[3]                ; Merged with decode:C3|OP_DATA[3] ;
+; ram_dc:C6|RAM_AD_OUT[2]                ; Merged with decode:C3|OP_DATA[2] ;
+; ram_dc:C6|RAM_AD_OUT[1]                ; Merged with decode:C3|OP_DATA[1] ;
+; ram_dc:C6|RAM_AD_OUT[0]                ; Merged with decode:C3|OP_DATA[0] ;
+; exec:C7|P_COUNT[4..7]                  ; Lost fanout                      ;
+; Total Number of Removed Registers = 12 ;                                  ;
++----------------------------------------+----------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                          ;
++--------------------+--------------------+------------------------------------------------------------+
+; Register name      ; Reason for Removal ; Registers Removed due to This Register                     ;
++--------------------+--------------------+------------------------------------------------------------+
+; exec:C7|P_COUNT[7] ; Lost Fanouts       ; exec:C7|P_COUNT[6], exec:C7|P_COUNT[5], exec:C7|P_COUNT[4] ;
++--------------------+--------------------+------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 380   ;
+; Number of registers using Synchronous Clear  ; 133   ;
+; Number of registers using Synchronous Load   ; 20    ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 310   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions          ;
++--------------------------+---------------------+------+
+; Register Name            ; Megafunction        ; Type ;
++--------------------------+---------------------+------+
+; fetch:C2|PROM_OUT[0..14] ; fetch:C2|Mux0_rtl_0 ; ROM  ;
++--------------------------+---------------------+------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |cpu15|reg_wb:C8|REG_0[10]   ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |cpu15|reg_wb:C8|REG_1[3]    ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |cpu15|reg_wb:C8|REG_2[2]    ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |cpu15|reg_wb:C8|REG_3[14]   ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |cpu15|reg_wb:C8|REG_4[7]    ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |cpu15|reg_wb:C8|REG_5[8]    ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |cpu15|reg_wb:C8|REG_6[14]   ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |cpu15|reg_wb:C8|REG_7[13]   ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |cpu15|reg_dc:C5|REG_OUT[15] ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |cpu15|reg_dc:C4|REG_OUT[0]  ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |cpu15|clock_gen:C1|CLK_DC   ;
+; 12:1               ; 8 bits    ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |cpu15|exec:C7|P_COUNT[1]    ;
+; 256:1              ; 16 bits   ; 2720 LEs      ; 160 LEs              ; 2560 LEs               ; Yes        ; |cpu15|ram_dc:C6|RAM_OUT[1]  ;
+; 14:1               ; 14 bits   ; 126 LEs       ; 84 LEs               ; 42 LEs                 ; Yes        ; |cpu15|exec:C7|REG_IN[8]     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+
+
++--------------------------------------------------------------------------------------+
+; Source assignments for fetch:C2|altsyncram:Mux0_rtl_0|altsyncram_h751:auto_generated ;
++---------------------------------+--------------------+------+------------------------+
+; Assignment                      ; Value              ; From ; To                     ;
++---------------------------------+--------------------+------+------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                      ;
++---------------------------------+--------------------+------+------------------------+
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: fetch:C2|altsyncram:Mux0_rtl_0 ;
++------------------------------------+----------------------+---------------------+
+; Parameter Name                     ; Value                ; Type                ;
++------------------------------------+----------------------+---------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped             ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE      ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped             ;
+; OPERATION_MODE                     ; ROM                  ; Untyped             ;
+; WIDTH_A                            ; 15                   ; Untyped             ;
+; WIDTHAD_A                          ; 8                    ; Untyped             ;
+; NUMWORDS_A                         ; 256                  ; Untyped             ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped             ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped             ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped             ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped             ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped             ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped             ;
+; WIDTH_B                            ; 1                    ; Untyped             ;
+; WIDTHAD_B                          ; 1                    ; Untyped             ;
+; NUMWORDS_B                         ; 1                    ; Untyped             ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped             ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped             ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped             ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped             ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped             ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped             ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped             ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped             ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped             ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped             ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped             ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped             ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Untyped             ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped             ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped             ;
+; BYTE_SIZE                          ; 8                    ; Untyped             ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped             ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped             ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped             ;
+; INIT_FILE                          ; cpu15.cpu150.rtl.mif ; Untyped             ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped             ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped             ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped             ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped             ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped             ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped             ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped             ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped             ;
+; ENABLE_ECC                         ; FALSE                ; Untyped             ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped             ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped             ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped             ;
+; CBXI_PARAMETER                     ; altsyncram_h751      ; Untyped             ;
++------------------------------------+----------------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                           ;
++-------------------------------------------+--------------------------------+
+; Name                                      ; Value                          ;
++-------------------------------------------+--------------------------------+
+; Number of entity instances                ; 1                              ;
+; Entity Instance                           ; fetch:C2|altsyncram:Mux0_rtl_0 ;
+;     -- OPERATION_MODE                     ; ROM                            ;
+;     -- WIDTH_A                            ; 15                             ;
+;     -- NUMWORDS_A                         ; 256                            ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                   ;
+;     -- WIDTH_B                            ; 1                              ;
+;     -- NUMWORDS_B                         ; 1                              ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                         ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                   ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                           ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                      ;
++-------------------------------------------+--------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "reg_dc:C5"                                                                               ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; N_REG_OUT ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 380                         ;
+;     ENA               ; 178                         ;
+;     ENA SCLR          ; 128                         ;
+;     ENA SCLR SLD      ; 4                           ;
+;     SCLR              ; 1                           ;
+;     SLD               ; 16                          ;
+;     plain             ; 53                          ;
+; arriav_lcell_comb     ; 287                         ;
+;     arith             ; 21                          ;
+;         1 data inputs ; 5                           ;
+;         3 data inputs ; 16                          ;
+;     normal            ; 266                         ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 23                          ;
+;         3 data inputs ; 37                          ;
+;         4 data inputs ; 12                          ;
+;         5 data inputs ; 46                          ;
+;         6 data inputs ; 146                         ;
+; boundary_port         ; 34                          ;
+; stratixv_ram_block    ; 15                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.60                        ;
+; Average LUT depth     ; 2.07                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Processing started: Sun Jan  3 15:46:05 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off cpu15 -c cpu15
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file verilog/reg_wb.v
+    Info (12023): Found entity 1: reg_wb File: /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/reg_wb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file verilog/reg_dc.v
+    Info (12023): Found entity 1: reg_dc File: /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/reg_dc.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file verilog/ram_wb.v
+    Info (12023): Found entity 1: ram_wb File: /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/ram_wb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file verilog/ram_dc.v
+    Info (12023): Found entity 1: ram_dc File: /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/ram_dc.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file verilog/fetch.v
+    Info (12023): Found entity 1: fetch File: /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/fetch.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file verilog/exec.v
+    Info (12023): Found entity 1: exec File: /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/exec.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file verilog/decode.v
+    Info (12023): Found entity 1: decode File: /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/decode.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file verilog/cpu15.v
+    Info (12023): Found entity 1: cpu15 File: /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/cpu15.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file verilog/clock_gen.v
+    Info (12023): Found entity 1: clock_gen File: /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/clock_gen.v Line: 3
+Info (12127): Elaborating entity "cpu15" for the top level hierarchy
+Info (12128): Elaborating entity "clock_gen" for hierarchy "clock_gen:C1" File: /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/cpu15.v Line: 45
+Info (12128): Elaborating entity "fetch" for hierarchy "fetch:C2" File: /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/cpu15.v Line: 47
+Info (12128): Elaborating entity "decode" for hierarchy "decode:C3" File: /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/cpu15.v Line: 49
+Info (12128): Elaborating entity "reg_dc" for hierarchy "reg_dc:C4" File: /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/cpu15.v Line: 52
+Info (12128): Elaborating entity "ram_dc" for hierarchy "ram_dc:C6" File: /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/cpu15.v Line: 58
+Info (12128): Elaborating entity "exec" for hierarchy "exec:C7" File: /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/cpu15.v Line: 61
+Info (12128): Elaborating entity "reg_wb" for hierarchy "reg_wb:C8" File: /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/cpu15.v Line: 64
+Info (12128): Elaborating entity "ram_wb" for hierarchy "ram_wb:C9" File: /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/verilog/cpu15.v Line: 67
+Info (19000): Inferred 1 megafunctions from design logic
+    Info (276031): Inferred altsyncram megafunction from the following design logic: "fetch:C2|Mux0_rtl_0"
+        Info (286033): Parameter OPERATION_MODE set to ROM
+        Info (286033): Parameter WIDTH_A set to 15
+        Info (286033): Parameter WIDTHAD_A set to 8
+        Info (286033): Parameter NUMWORDS_A set to 256
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter RAM_BLOCK_TYPE set to AUTO
+        Info (286033): Parameter INIT_FILE set to cpu15.cpu150.rtl.mif
+Info (12130): Elaborated megafunction instantiation "fetch:C2|altsyncram:Mux0_rtl_0"
+Info (12133): Instantiated megafunction "fetch:C2|altsyncram:Mux0_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "ROM"
+    Info (12134): Parameter "WIDTH_A" = "15"
+    Info (12134): Parameter "WIDTHAD_A" = "8"
+    Info (12134): Parameter "NUMWORDS_A" = "256"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
+    Info (12134): Parameter "INIT_FILE" = "cpu15.cpu150.rtl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_h751.tdf
+    Info (12023): Found entity 1: altsyncram_h751 File: /home/kitkat4/ws/src/cpu_no_tsukurikata/cpu15/db/altsyncram_h751.tdf Line: 28
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 4 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 639 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 18 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 590 logic cells
+    Info (21064): Implemented 15 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 1047 megabytes
+    Info: Processing ended: Sun Jan  3 15:46:13 2021
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:20
+
+

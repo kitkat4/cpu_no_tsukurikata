@@ -16,7 +16,7 @@ module clock_gen(CLK, CLK_FT, CLK_DC, CLK_EX, CLK_WB);
 
     always@(posedge CLK) begin
 
-        COUNT <= COUNT + 1;
+        COUNT <= COUNT + 2'b01;
         
         if(COUNT == 2'b00) begin
             CLK_FT <= 1;
